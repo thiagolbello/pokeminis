@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pokeminis/static/css/main.02395a1c.css",
-    "main.js": "/pokeminis/static/js/main.534b03ef.js",
+    "main.js": "/pokeminis/static/js/main.c5c47ff6.js",
     "index.html": "/pokeminis/index.html",
     "main.02395a1c.css.map": "/pokeminis/static/css/main.02395a1c.css.map",
-    "main.534b03ef.js.map": "/pokeminis/static/js/main.534b03ef.js.map"
+    "main.c5c47ff6.js.map": "/pokeminis/static/js/main.c5c47ff6.js.map"
   },
   "entrypoints": [
     "static/css/main.02395a1c.css",
-    "static/js/main.534b03ef.js"
+    "static/js/main.c5c47ff6.js"
   ]
 }
