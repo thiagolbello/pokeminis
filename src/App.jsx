@@ -13,9 +13,9 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path="/pokeminis/" element={<ItemListContainer/>}/>
-          <Route path="/type/:typeId" element={<ItemListContainer/>}/>
-          <Route path="/details/:detailsId" element={<ItemDetailContainer/>}/>
-          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/pokeminis/type/:typeId" element={<ItemListContainer/>}/>
+          <Route path="/pokeminis/details/:detailsId" element={<ItemDetailContainer/>}/>
+          <Route path="/pokeminis/cart" element={<Cart/>}/>
         </Routes>
       </BrowserRouter>
     </CartContextProvider>

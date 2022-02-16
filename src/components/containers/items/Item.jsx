@@ -25,7 +25,7 @@ const Item = ({ details }) => {
             </CardContent>
             <CardActions>
             <Button color="c1" variant="contained" size="small" endIcon={<ShoppingCartTwoToneIcon/>}>Buy</Button>
-            <Link to={`/details/${details.id}`} style={{textDecoration: 'none'}}><Button size="small" endIcon={<InfoOutlinedIcon/>}>Details</Button></Link>
+            <Link to={`/pokeminis/details/${details.id}`} style={{textDecoration: 'none'}}><Button size="small" endIcon={<InfoOutlinedIcon/>}>Details</Button></Link>
             </CardActions>
             </Card>
         </ThemeProvider>

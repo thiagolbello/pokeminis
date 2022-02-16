@@ -52,8 +52,8 @@ const ItemDetail = ({details}) => {
 
             {show ? <ItemCount stock={details.stock} onAdd={onAdd}/> : 
             <div>
-                <Link to='/cart'><button>Terminar la Compra</button></Link>
-                <Link to='/'><button>Continuar Comprando</button></Link>
+                <Link to='/pokeminis/cart'><button>Terminar la Compra</button></Link>
+                <Link to='/pokeminis/'><button>Continuar Comprando</button></Link>
             </div>
             }
         </center>
