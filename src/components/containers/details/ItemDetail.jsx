@@ -23,7 +23,6 @@ const ItemDetail = ({details}) => {
                 <CardActionArea>
                     <CardMedia
                     component="img"
-                    height="140"
                     image={`.././${details.image}`}
                     alt={`${details.name}`}
                     />
