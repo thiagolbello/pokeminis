@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-          <Route path="/" element={<ItemListContainer/>}/>
+          <Route path="/pokeminis/" element={<ItemListContainer/>}/>
           <Route path="/type/:typeId" element={<ItemListContainer/>}/>
           <Route path="/details/:detailsId" element={<ItemDetailContainer/>}/>
           <Route path="/cart" element={<Cart/>}/>

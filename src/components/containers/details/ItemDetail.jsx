@@ -16,7 +16,7 @@ const ItemDetail = ({details}) => {
     }
     
     return (
-        <div>
+        <center>
             <img src={`../${details.image}`} alt={`${details.name}`} width={400}></img>
             <h1><strong>Nombre: </strong>{details.name}</h1>
             <h3><strong>Descripcion: </strong>{details.description}</h3>
@@ -29,7 +29,7 @@ const ItemDetail = ({details}) => {
                 <Link to='/'><button>Continuar Comprando</button></Link>
             </div>
             }
-        </div>
+        </center>
     )
 }
 
