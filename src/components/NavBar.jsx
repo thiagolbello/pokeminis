@@ -11,7 +11,7 @@ export default function NavBar() {
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" color="c6" sx={{borderRadius: 5}} className="sticky">
             <Toolbar>
-            <Link to='/' style={{ textDecoration: 'none', color: 'white' }}><Typography variant="h6" component="div">Pokeminis</Typography></Link>
+            <Link to='/pokeminis/' style={{ textDecoration: 'none', color: 'white' }}><Typography variant="h6" component="div">Pokeminis</Typography></Link>
             <Link to="/type/Dark" style={{ textDecoration: 'none' }}><Typography variant="h6" component="div" className="Dark" marginLeft={5}>Dark</Typography></Link>
             <Link to="/type/Fire" style={{ textDecoration: 'none' }}><Typography variant="h6" component="div" className="Fire" marginLeft={5}>Fire</Typography></Link>
             <Link to="/type/Grass" style={{ textDecoration: 'none' }}><Typography variant="h6" component="div" className="Grass" marginLeft={5}>Grass</Typography></Link>

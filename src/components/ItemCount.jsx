@@ -20,7 +20,7 @@ function ItemCount({ stock, onAdd }) {
 
     return (
         <div style={{ textAlign: 'center', alignItems: 'center', justifyContent: 'center' }} >
-            <h1 > {contador}   </h1>
+            <h1 style={{fontFamily: 'helvetica'}}> {contador}   </h1>
             <button onClick={resta} > - </button>
             <button onClick={() => onAdd(contador)} disabled={contador < 1 && 'disabled'}> Agregar al Carrito </button>
             <button onClick={suma} > + </button>

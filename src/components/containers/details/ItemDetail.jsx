@@ -1,7 +1,9 @@
+import { Card, CardContent, CardMedia, Typography } from "@mui/material"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import ItemCount from "../../ItemCount"
 import { useCartContext } from "../cart/CartContext"
+import { CardActionArea } from '@mui/material';
 
 const ItemDetail = ({details}) => {
 
@@ -17,11 +19,36 @@ const ItemDetail = ({details}) => {
     
     return (
         <center>
-            <img src={`../${details.image}`} alt={`${details.name}`} width={400}></img>
-            <h1><strong>Nombre: </strong>{details.name}</h1>
-            <h3><strong>Descripcion: </strong>{details.description}</h3>
-            <h2><strong>Precio: </strong>{details.price} USD</h2>
-            <h4><strong>Stock: </strong>{details.stock}</h4>
+            <Card sx={{ maxWidth: 345, margin: '1em' }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="140"
+                    image={`.././${details.image}`}
+                    alt={`${details.name}`}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"style={{fontFamily: 'fantasy', fontSize: '50px'}}>
+                            {details.name}
+                        </Typography>
+                        <Typography style={{margin: '1em'}} color="text.secondary">
+                            {details.description}
+                        </Typography>
+                        <Typography style={{margin: '1em'}} color="black">
+                            Weight: {details.weight}
+                        </Typography>
+                        <Typography style={{margin: '1em'}} color="black">
+                            Height: {details.height}
+                        </Typography>
+                        <Typography style={{margin: '1em'}} color="green">
+                            Price: {details.price}
+                        </Typography>
+                        <Typography style={{margin: '1em'}} color="blue">
+                            Stock: {details.stock}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
 
             {show ? <ItemCount stock={details.stock} onAdd={onAdd}/> : 
             <div>
