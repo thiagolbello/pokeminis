@@ -1,0 +1,65 @@
+.Grass {
+    animation: gradientText 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #132A13, #4F772D, #90A955, #31572C, #ECF39E);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Water {
+    animation: gradientText 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #62B6CB, #CAE9FF, #BEE9E8, #5FA8D3, #1B4965);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Psychic {
+    animation: gradientText 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #D6D2D2, #F4BBD3, #F1E4F3, #F686BD, #FE5D9F);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Fire {
+    animation: gradientText 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #38040E, #800E13, #250902, #AD2831, #640D14);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Dark {
+    animation: gradientText 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #0B132B, #5BC0BE, #3A506B, #1C2541, #6FFFE9);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Normal {
+    animation: gradientText 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #252323, #F5F1ED, #70798C, #DAD2BC, #A99985);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+  @keyframes gradientText {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+  }
